@@ -15,7 +15,7 @@ const ProductPage = () => {
   const product = {
     id: 7,
     name: 'АК-12',
-    price: 34990,
+    price: 69999,
     inStock: true,
     rating: 4.8,
     reviews: 47,

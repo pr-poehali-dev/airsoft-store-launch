@@ -30,7 +30,7 @@ const Index = () => {
     {
       id: 1,
       name: 'АК-12',
-      price: 34990,
+      price: 69999,
       category: 'rifles',
       image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/7245349d-0e96-470a-a399-060e94364e3c.jpg',
       inStock: true,
