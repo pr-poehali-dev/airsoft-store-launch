@@ -41,7 +41,7 @@ const Index = () => {
       name: 'М4А1 Tactical',
       price: 24990,
       category: 'rifles',
-      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/c987d412-29af-4511-9111-3861eab9cee5.jpg',
+      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/fe7d658f-e481-4a0d-be20-7604669c97e4.jpg',
       inStock: true,
       description: 'Тактическая штурмовая винтовка'
     },
@@ -50,7 +50,7 @@ const Index = () => {
       name: 'Glock 17 Gen5',
       price: 12990,
       category: 'pistols',
-      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/65cf8b3f-8dc2-4c03-b02e-d9a7199b764b.jpg',
+      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/1b4ac1ba-2e14-470c-af16-5206ae89dc27.jpg',
       inStock: true,
       description: 'Пистолет для страйкбола'
     },
@@ -59,7 +59,7 @@ const Index = () => {
       name: 'AK-74M',
       price: 26990,
       category: 'rifles',
-      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/c987d412-29af-4511-9111-3861eab9cee5.jpg',
+      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/1c1c4641-b64b-4136-a669-f0b0c37f9f82.jpg',
       inStock: true,
       description: 'Классика российского оружия'
     },
@@ -68,7 +68,7 @@ const Index = () => {
       name: 'Desert Eagle',
       price: 15990,
       category: 'pistols',
-      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/65cf8b3f-8dc2-4c03-b02e-d9a7199b764b.jpg',
+      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/249a8366-167a-4ffd-95fa-72ecc2858bef.jpg',
       inStock: false,
       description: 'Мощный пистолет'
     },
@@ -77,7 +77,7 @@ const Index = () => {
       name: 'MP5 Submachine',
       price: 21990,
       category: 'rifles',
-      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/c987d412-29af-4511-9111-3861eab9cee5.jpg',
+      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/edf9fc56-e7d4-4541-9d63-dae66b9482d7.jpg',
       inStock: true,
       description: 'Компактный пистолет-пулемет'
     },
@@ -86,7 +86,7 @@ const Index = () => {
       name: 'Beretta M9',
       price: 13990,
       category: 'pistols',
-      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/65cf8b3f-8dc2-4c03-b02e-d9a7199b764b.jpg',
+      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/17dd545c-a12b-47d1-a45b-d0571e9ed75e.jpg',
       inStock: true,
       description: 'Надежный армейский пистолет'
     }
