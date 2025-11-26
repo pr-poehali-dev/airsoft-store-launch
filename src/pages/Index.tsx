@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -21,12 +22,22 @@ interface CartItem extends Product {
 }
 
 const Index = () => {
+  const navigate = useNavigate();
   const [cart, setCart] = useState<CartItem[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
   const products: Product[] = [
     {
       id: 1,
+      name: 'АК-12',
+      price: 34990,
+      category: 'rifles',
+      image: 'https://cdn.poehali.dev/projects/4b4a04ee-5149-43a2-93dd-8cafe8ad8dce/files/7245349d-0e96-470a-a399-060e94364e3c.jpg',
+      inStock: true,
+      description: 'Современная российская штурмовая винтовка'
+    },
+    {
+      id: 2,
       name: 'М4А1 Tactical',
       price: 24990,
       category: 'rifles',
@@ -35,7 +46,7 @@ const Index = () => {
       description: 'Тактическая штурмовая винтовка'
     },
     {
-      id: 2,
+      id: 3,
       name: 'Glock 17 Gen5',
       price: 12990,
       category: 'pistols',
@@ -44,7 +55,7 @@ const Index = () => {
       description: 'Пистолет для страйкбола'
     },
     {
-      id: 3,
+      id: 4,
       name: 'AK-74M',
       price: 26990,
       category: 'rifles',
@@ -53,7 +64,7 @@ const Index = () => {
       description: 'Классика российского оружия'
     },
     {
-      id: 4,
+      id: 5,
       name: 'Desert Eagle',
       price: 15990,
       category: 'pistols',
@@ -62,7 +73,7 @@ const Index = () => {
       description: 'Мощный пистолет'
     },
     {
-      id: 5,
+      id: 6,
       name: 'MP5 Submachine',
       price: 21990,
       category: 'rifles',
@@ -71,7 +82,7 @@ const Index = () => {
       description: 'Компактный пистолет-пулемет'
     },
     {
-      id: 6,
+      id: 7,
       name: 'Beretta M9',
       price: 13990,
       category: 'pistols',
@@ -269,7 +280,10 @@ const Index = () => {
             {filteredProducts.map(product => (
               <Card key={product.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover-scale">
                 <CardHeader className="p-0">
-                  <div className="relative">
+                  <div 
+                    className="relative cursor-pointer"
+                    onClick={() => product.id === 1 && navigate('/product/ak12')}
+                  >
                     <img
                       src={product.image}
                       alt={product.name}
@@ -288,15 +302,29 @@ const Index = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <CardTitle className="mb-2 text-2xl">{product.name}</CardTitle>
+                  <CardTitle 
+                    className="mb-2 text-2xl cursor-pointer hover:text-accent transition-colors"
+                    onClick={() => product.id === 1 && navigate('/product/ak12')}
+                  >
+                    {product.name}
+                  </CardTitle>
                   <CardDescription className="mb-4">{product.description}</CardDescription>
                   <div className="flex items-center justify-between">
                     <span className="text-3xl font-bold">{product.price.toLocaleString()} ₽</span>
                   </div>
                 </CardContent>
-                <CardFooter className="p-6 pt-0">
+                <CardFooter className="p-6 pt-0 flex gap-2">
+                  {product.id === 1 && (
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      onClick={() => navigate('/product/ak12')}
+                    >
+                      <Icon name="Info" size={20} />
+                    </Button>
+                  )}
                   <Button
-                    className="w-full"
+                    className="flex-1"
                     size="lg"
                     disabled={!product.inStock}
                     onClick={() => addToCart(product)}
